@@ -1,0 +1,176 @@
+/* ==========================================================================
+   PLANTILLA ESTRUCTURAL BASE - FLEXBOX BÁSICO (Para reutilizar en clase)
+   ========================================================================== */
+
+/* Reseteo básico universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Clave didáctica para que los paddings no rompan los widths */
+}
+
+body {
+    background-color: #3E15A3;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    /* Sin tipos de fuente configuradas para colocar luego con @import */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 1. EL CONTENEDOR FLUIDO (Responsivo nativo) */
+.container {
+    width: 90%;          /* Deja un 10% de margen total (5% a cada lado) */
+    margin: 0 auto;      /* Centra el bloque horizontalmente en pantallas grandes */
+}
+
+/* Componente general para imágenes fluidas */
+img {
+    width: 100%;
+    height: auto;
+    display: block;}
+
+
+h3 { color: #0B0B0D;
+    }
+
+
+h4 { color: #0B0B0D}
+
+
+p { color: #0B0B0D}
+/*********************************************************************************/
+/* ENCABEZADO (Menú alineado con Flexbox)                                       */
+/*********************************************************************************/
+#main-header {
+    background-color: #BD4257;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;            /* Centrado vertical perfecto */
+    flex-wrap: wrap;                /* Si la pantalla es muy chica, el menú baja solo */
+    gap: 15px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;                      /* Espaciado simple entre los enlaces */
+}
+
+.nav-menu a:hover {
+    color: #cccccc;
+}
+
+.logokb { width: 1320px;
+         height: 600px}
+/*********************************************************************************/
+/* SECCIÓN HERO / BIENVENIDA                                                     */
+/*********************************************************************************/
+.hero-section {
+    background-color: #BD4257;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 30px 0;
+    border: 3px solid #821DB8;
+}
+
+.hero-section h2 {
+    margin-bottom: 15px;
+}
+
+/*********************************************************************************/
+/* DISEÑO CENTRAL DE 2 COLUMNAS (Contenido + Sidebar)                            */
+/*********************************************************************************/
+.main-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;                /* Si no entran juntas, la barra lateral cae */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Columna de Contenido Principal (Ancho fijo aproximado al 65%) */
+.content-area {
+    background-color: #BD4257;
+    padding: 20px;
+    width: 650px;
+    border: 3px solid #821DB8;
+}
+
+/* Columna de Barra Lateral (Ancho fijo secundario aproximado al 30%) */
+.sidebar-area {
+    background-color: #BD4257;
+    padding: 20px;
+    width: 600px;
+    border: 3px solid #821DB8;
+}
+
+/*********************************************************************************/
+/* GRILLA DE TARJETAS (3 Columnas con Flexbox)                                   */
+/*********************************************************************************/
+.grid-section {
+	margin-bottom: 40px;
+}
+
+.grid-section h3 {
+	margin-bottom: 20px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+/* Tarjetas individuales fijas para que se apilen solas al reducir la pantalla */
+.card {
+    background-color: #BD4257;
+    padding: 20px;
+    width: 400px;
+    border: 3px solid #821DB8;
+    text-align: center;
+}
+
+.card h4 {
+	margin-bottom: 10px;
+}
+
+/*********************************************************************************/
+/* PIE DE PÁGINA (Footer)                                                        */
+/*********************************************************************************/
+#main-footer {
+    background-color: #BD4257;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Ayuda a empujar el footer hacia abajo */
+}
+
+
+.contactosw {height: 250px;
+             width: 250px;
+             }
+
+
+.logo { color: #0B0B0D;}
+
+
+
+.agr {color: blue}
+
+
+
+.waos {color: #0B0B0D}
