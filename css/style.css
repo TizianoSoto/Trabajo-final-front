@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #3E15A3;
+    background-color: #8C00BF;
     font-size: 16px;
     line-height: 1.6;
     color: #333333;
@@ -51,7 +51,7 @@ p { color: #0B0B0D}
 /* ENCABEZADO (Menú alineado con Flexbox)                                       */
 /*********************************************************************************/
 #main-header {
-    background-color: #BD4257;
+    background-color: #EDDA21;
     color: #ffffff;
     padding: 15px 0;
 }
@@ -73,21 +73,19 @@ p { color: #0B0B0D}
     color: #cccccc;
 }
 
-.logokb { width: 1320px;
-         height: 600px}
+.logokb {
+    width: 100%;
+}
 /*********************************************************************************/
 /* SECCIÓN HERO / BIENVENIDA                                                     */
 /*********************************************************************************/
 .hero-section {
-    background-color: #BD4257;
-    padding: 40px 20px;
-    text-align: center;
-    margin: 30px 0;
-    border: 3px solid #821DB8;
-}
-
-.hero-section h2 {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
 }
 
 /*********************************************************************************/
@@ -103,7 +101,7 @@ p { color: #0B0B0D}
 
 /* Columna de Contenido Principal (Ancho fijo aproximado al 65%) */
 .content-area {
-    background-color: #BD4257;
+    background-color: #EDDA21;
     padding: 20px;
     width: 650px;
     border: 3px solid #821DB8;
@@ -111,7 +109,7 @@ p { color: #0B0B0D}
 
 /* Columna de Barra Lateral (Ancho fijo secundario aproximado al 30%) */
 .sidebar-area {
-    background-color: #BD4257;
+    background-color: #EDDA21;
     padding: 20px;
     width: 600px;
     border: 3px solid #821DB8;
@@ -130,14 +128,14 @@ p { color: #0B0B0D}
 
 .grid-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 20px;
 }
 
 /* Tarjetas individuales fijas para que se apilen solas al reducir la pantalla */
 .card {
-    background-color: #BD4257;
+    background-color: #EDDA21;
     padding: 20px;
     width: 400px;
     border: 3px solid #821DB8;
@@ -152,15 +150,24 @@ p { color: #0B0B0D}
 /* PIE DE PÁGINA (Footer)                                                        */
 /*********************************************************************************/
 #main-footer {
-    background-color: #BD4257;
+    background-color: #EDDA21;
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* Ayuda a empujar el footer hacia abajo */
+    margin-top: auto;; /* Ayuda a empujar el footer hacia abajo */
 }
 
 
-.contactosw {height: 250px;
+.footer { background-color: #EDDA21;
+          color: #ffffff;
+          text-align: center;
+          padding: 20px 0;
+          margin-top: 386px
+        }
+
+
+.contactosw {
+             height: 250px;
              width: 250px;
              }
 
